@@ -1,0 +1,139 @@
+nav
+{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #0a0f15;
+  color: #edeef3;
+  align-items: center;
+  height: 50px;
+  font-size: 0.8rem;
+}
+.logo
+{
+  margin-left: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo img
+{
+  max-height: 100%;
+  max-width: 50px;
+
+}
+
+nav ul
+{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+}
+nav li{ margin-left: 20px;}
+a,a:link,a:visited{color:white;text-decoration: none;}
+
+.searchBar{margin: 0 auto 0 auto;}
+#search
+{ 
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 30px;
+  background-color: #2b2e33;
+  border-style: none;
+  width: 100%;
+}
+#search::placeholder{ color:#94959a; padding-left: 10px;}
+
+.log-reg
+{
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  margin-right: 100px;
+  align-items: center;
+}
+.log-reg img
+{
+  max-height: 30px;
+  margin-left: 20px;
+}
+#sandwich-menu-bg
+{
+  background-color: #0a0f15b6;
+  width: 100vh;
+  height: 100vh;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: 1;
+}
+#sandwich-menu
+{
+    display:none;
+    align-items: center;
+    position:fixed;
+    margin-left: auto;
+    height: 100vh;
+    width: 40vh;
+    background-color: #790827;
+    top:0;
+    left:0;
+    z-index: 1;
+    float: right;
+    flex-direction: column;
+}
+#sandwich-menu ul
+{
+  display:flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+#sandwich-menu li
+{
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#sandwich-menu span{font-size:30px; align-self: flex-end; margin-right:20px}
+
+
+.sandwich-menu-icon{display:none; max-width: 30px; margin-right:50px;}
+
+#sandwich-search
+{
+  height: 30px;
+  border-radius: 5px;
+  background-color: #2b2e33;
+  border-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.sandwich-log-reg
+{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.sandwich-log-reg img
+{
+  margin-top:10px;
+  margin-bottom: 10px;
+  max-width: 50px;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+  nav ul {display: none;}
+  .searchBar {display:none;}
+  .logo {margin-left: 50px;}
+  .log-reg {display:none;}
+  .sandwich-menu-icon{display:inline-block; margin-left: auto;}
+
+}

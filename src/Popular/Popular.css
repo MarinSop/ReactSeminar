@@ -1,0 +1,81 @@
+.popular-section
+{
+    width: 100%;
+    height: 100%;
+    top:500px;
+    position:relative;
+}
+
+.popular-top
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.popular-top h1{color: white; margin-bottom: 50px;}
+
+.grid-games
+{
+    margin-left: 100px;
+    margin-right: 100px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 40px;
+    justify-content: center;
+}
+.card{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 300px;
+}
+.card img
+{ 
+    border-radius: 20px;
+}
+.card-container
+{
+    display: flex;
+    position: absolute;
+    background-color: hsl(344, 100%, 38%, 80%);
+    width: 300px;
+    margin-top: 300px;
+    height: 100px;
+    border-radius: 0px 0px 20px 20px;
+    align-items: center;
+
+}
+.name-price
+{
+    color: white;
+    margin-left: 20px;
+}
+.name-price h4{margin:0;}
+.card-container button
+{
+    color:#f10545;
+    background-color: white;
+    border-style: none;
+    border-radius: 15px;
+    padding: 10px 15px 10px 15px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width: 992px) {
+
+.grid-games
+{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .grid-games
+{
+    grid-template-columns: repeat(1, 1fr);
+}
+}
